@@ -1,0 +1,93 @@
+import java.util.*;
+import java.io.*;
+class trainBooking{
+  public static void main (String args[]){
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("\n\t\t\t\tIRCTC TRAIN TICKETS BOOKING WEBSITE");
+    System.out.print("Enter your departure city\t:\t");
+    String Departure = scanner.nextLine();
+    System.out.print("Enter your destination area\t:\t");
+    String Destination = scanner.nextLine();
+    System.out.print("ENTER YOUR TIMING (1.Morning\t 2.Aftetnoon\t 3.Eveninig)\t:\t");
+    String Timing = scanner.nextLine();
+    System.out.print("Enter your Facilities [1.AC \t 2.Sleeper]\t:\t ");
+    String Facilities = scanner.nextLine();
+    System.out.println("\n\t\tAVAILABLE TRAINS");
+    System.out.println("\n\t1.METRO TRAIN\n \t2.HIGH SPEED TRAIN\n \t3.SPECIALLY TOURISTS TRAIN\n \t4.PASSENGER TRAIN" );
+    System.out.println("CHOOSE YOUR TRAIN\t:\t");
+     int Train = scanner.nextInt();
+     System.out.print("ENTER YOUR NAME\t:\t");
+     String name = scanner.nextLine();
+     System.out.print("ENTER YOUR AGE\t:\t");
+     int age = scanner.nextInt();
+     System.out.print("ENTER YOUR GENDER\t:\t");
+     String gender = scanner.nextLine();
+     System.out.print("ENTER YOUR CONTACT\t:\t");
+     int contact = scanner.nextInt();
+     System.out.print("ENTER YOUR IDENTIFICATION DOCUMENT [1.Aadhar card\t 2.Passport\t driving license"); 
+     String document = scanner.nextLine();
+     System.out.print("ENTER YOUR PAYMENT METHOD\n \tOPTION : [1.UPI payment\t 2.Cash card\t 3.Mobile Wallets\t:\t");
+     String payment = scanner.nextLine();
+     System.out.print("HOW MANY PEOPLE ARE COMING\t:\t");
+     int persons = scanner.nextInt();
+     if (Train == 1)
+     {
+       System.out.print("\n\t\t\tMETRO TRAIN (FAST AND ALL FACILITIES ARE AVAILABLE)");
+       System.out.print("\n\tFULL NAME\t:\t"+name);      
+       System.out.print("\n\tAGE\t:\t"+age);
+       System.out.print("\n\tGENDER\t:\t"+gender);
+       System.out.print("\n\tCONTACT\t:\t"+contact);
+       System.out.print("\n\tIDENTIFICATION DOCUMENT"+document);
+       System.out.print("\n\tPAYMENT METHOD"+payment);
+       int Amount = 400;
+       System.out.print("\n\tJOINING MEMBERS\t:\t"+persons);
+       int total_amount = Amount*persons;
+       System.out.println("PROCESS FINISHED");
+       }
+       else if (Train == 2)
+       {
+       System.out.print("\n\t\t\tHIGH SPEED TRAIN (FAST AND ALL FACILITIES ARE AVAILABLE)");
+       System.out.print("\n\tFULL NAME\t:\t"+name);      
+       System.out.print("\n\tAGE\t:\t"+age);
+       System.out.print("\n\tGENDER\t:\t"+gender);
+       System.out.print("\n\tCONTACT\t:\t"+contact);
+       System.out.print("\n\tIDENTIFICATION DOCUMENT"+document);
+       System.out.print("\n\tPAYMENT METHOD"+payment);
+       int Amount = 400;
+       System.out.print("\n\tJOINING MEMBERS\t:\t"+persons);
+       int total_amount = Amount*persons;
+       System.out.println("PROCESS FINISHED");
+       }
+       else if (Train == 3)
+       {
+       System.out.print("\n\t\t\t SPECIALLY TOURISTS TRAIN (SMOOTHY SPEED AND ALL FACILITIES AVAILABLE)");
+       System.out.print("\n\tFULL NAME\t:\t"+name);      
+       System.out.print("\n\tAGE\t:\t"+age);
+       System.out.print("\n\tGENDER\t:\t"+gender);
+       System.out.print("\n\tCONTACT\t:\t"+contact);
+       System.out.print("\n\tIDENTIFICATION DOCUMENT"+document);
+       System.out.print("\n\tPAYMENT METHOD"+payment);
+       int Amount = 400;
+       System.out.print("\n\tJOINING MEMBERS\t:\t"+persons);
+       int total_amount = Amount*persons;
+       System.out.println("PROCESS FINISHED");
+      }
+      else if (Train == 4)
+      {
+       System.out.print("\n\t\t\tPASSENGER TRAIN ( NOT AC, NO FACILITIES  AVAILABLE)");
+       System.out.print("\n\tFULL NAME\t:\t"+name);      
+       System.out.print("\n\tAGE\t:\t"+age);
+       System.out.print("\n\tGENDER\t:\t"+gender);
+       System.out.print("\n\tCONTACT\t:\t"+contact);
+       System.out.print("\n\tIDENTIFICATION DOCUMENT"+document);
+       System.out.print("\n\tPAYMENT METHOD"+payment);
+       int Amount = 400;
+       System.out.print("\n\tJOINING MEMBERS\t:\t"+persons);
+       int total_amount = Amount*persons;
+       System.out.println("PROCESS FINISHED");
+       }
+       else {
+         System.out.println("\n\tYour's Facilities are not available in our Website");
+       }
+     }
+     }
